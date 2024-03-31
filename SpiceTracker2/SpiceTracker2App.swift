@@ -1,17 +1,36 @@
 //
-//  SpiceTracker2App.swift
-//  SpiceTracker2
+//  KitchenIngredientTrackerApp.swift
+//  KitchenIngredientTracker
 //
-//  Created by Sanjana Kumar on 3/24/24.
+//  Created by Nynika Badam on 2/29/24.
 //
+// Entry point
+
 
 import SwiftUI
+import FirebaseCore
+
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    FirebaseApp.configure()
+
+    return true
+  }
+}
 
 @main
-struct SpiceTracker2App: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+struct YourApp: App {
+  // register app delegate for Firebase setup
+  @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
+
+  var body: some Scene {
+    WindowGroup {
+      NavigationView {
+        ContentView()
+      }
     }
+  }
 }

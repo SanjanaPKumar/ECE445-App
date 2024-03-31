@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9E03CCD92BACDAD400EFB579"
-               BuildableName = "SpiceTracker.app"
-               BlueprintName = "SpiceTracker"
-               ReferencedContainer = "container:SpiceTracker.xcodeproj">
+               BlueprintIdentifier = "F53BC8702BB116D70054B9AC"
+               BuildableName = "SpiceTracker2.app"
+               BlueprintName = "SpiceTracker2"
+               ReferencedContainer = "container:SpiceTracker2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,10 +35,10 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9E03CCE92BACDADE00EFB579"
-               BuildableName = "SpiceTrackerTests.xctest"
-               BlueprintName = "SpiceTrackerTests"
-               ReferencedContainer = "container:SpiceTracker.xcodeproj">
+               BlueprintIdentifier = "F53BC8802BB116DC0054B9AC"
+               BuildableName = "SpiceTracker2Tests.xctest"
+               BlueprintName = "SpiceTracker2Tests"
+               ReferencedContainer = "container:SpiceTracker2.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,10 +46,10 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9E03CCF32BACDADE00EFB579"
-               BuildableName = "SpiceTrackerUITests.xctest"
-               BlueprintName = "SpiceTrackerUITests"
-               ReferencedContainer = "container:SpiceTracker.xcodeproj">
+               BlueprintIdentifier = "F53BC88A2BB116DC0054B9AC"
+               BuildableName = "SpiceTracker2UITests.xctest"
+               BlueprintName = "SpiceTracker2UITests"
+               ReferencedContainer = "container:SpiceTracker2.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -68,17 +68,17 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9E03CCD92BACDAD400EFB579"
-            BuildableName = "SpiceTracker.app"
-            BlueprintName = "SpiceTracker"
-            ReferencedContainer = "container:SpiceTracker.xcodeproj">
+            BlueprintIdentifier = "F53BC8702BB116D70054B9AC"
+            BuildableName = "SpiceTracker2.app"
+            BlueprintName = "SpiceTracker2"
+            ReferencedContainer = "container:SpiceTracker2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "IDEPreferLogStreaming"
             value = "YES"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>
@@ -92,10 +92,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9E03CCD92BACDAD400EFB579"
-            BuildableName = "SpiceTracker.app"
-            BlueprintName = "SpiceTracker"
-            ReferencedContainer = "container:SpiceTracker.xcodeproj">
+            BlueprintIdentifier = "F53BC8702BB116D70054B9AC"
+            BuildableName = "SpiceTracker2.app"
+            BlueprintName = "SpiceTracker2"
+            ReferencedContainer = "container:SpiceTracker2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
