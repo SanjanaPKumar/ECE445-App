@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E03CCDE2BACDAD400EFB579 /* SpiceTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E03CCDD2BACDAD400EFB579 /* SpiceTrackerApp.swift */; };
+		9E03CCE22BACDADD00EFB579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E03CCE12BACDADD00EFB579 /* Assets.xcassets */; };
+		9E03CCE52BACDADD00EFB579 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E03CCE42BACDADD00EFB579 /* Preview Assets.xcassets */; };
+		9E03CCEF2BACDADE00EFB579 /* SpiceTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E03CCEE2BACDADE00EFB579 /* SpiceTrackerTests.swift */; };
+		9E03CCF92BACDADE00EFB579 /* SpiceTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E03CCF82BACDADE00EFB579 /* SpiceTrackerUITests.swift */; };
+		9E03CCFB2BACDADE00EFB579 /* SpiceTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E03CCFA2BACDADE00EFB579 /* SpiceTrackerUITestsLaunchTests.swift */; };
+		9E03CD082BACDB5B00EFB579 /* IngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E03CD072BACDB5A00EFB579 /* IngredientView.swift */; };
+		9E5C6DD32BB28D3800DDFE63 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9E5C6DD22BB28D3800DDFE63 /* FirebaseAnalytics */; };
+		9E6FBBAB2BB497E30094B078 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E6FBBAA2BB497E30094B078 /* GoogleService-Info.plist */; };
+		9E6FBBAC2BB497E30094B078 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E6FBBAA2BB497E30094B078 /* GoogleService-Info.plist */; };
+		9E6FBBAD2BB497E30094B078 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E6FBBAA2BB497E30094B078 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E03CCEB2BACDADE00EFB579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E03CCD22BACDAD400EFB579 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E03CCD92BACDAD400EFB579;
+			remoteInfo = SpiceTracker;
+		};
+		9E03CCF52BACDADE00EFB579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E03CCD22BACDAD400EFB579 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E03CCD92BACDAD400EFB579;
+			remoteInfo = SpiceTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9E03CCDA2BACDAD400EFB579 /* SpiceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpiceTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E03CCDD2BACDAD400EFB579 /* SpiceTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceTrackerApp.swift; sourceTree = "<group>"; };
+		9E03CCE12BACDADD00EFB579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E03CCE42BACDADD00EFB579 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9E03CCEA2BACDADE00EFB579 /* SpiceTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpiceTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E03CCEE2BACDADE00EFB579 /* SpiceTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceTrackerTests.swift; sourceTree = "<group>"; };
+		9E03CCF42BACDADE00EFB579 /* SpiceTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpiceTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E03CCF82BACDADE00EFB579 /* SpiceTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceTrackerUITests.swift; sourceTree = "<group>"; };
+		9E03CCFA2BACDADE00EFB579 /* SpiceTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9E03CD072BACDB5A00EFB579 /* IngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientView.swift; sourceTree = "<group>"; };
+		9E6FBBAA2BB497E30094B078 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E03CCD72BACDAD400EFB579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E5C6DD32BB28D3800DDFE63 /* FirebaseAnalytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E03CCE72BACDADE00EFB579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E03CCF12BACDADE00EFB579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E03CCD12BACDAD400EFB579 = {
+			isa = PBXGroup;
+			children = (
+				9E03CCDC2BACDAD400EFB579 /* SpiceTracker */,
+				9E03CCED2BACDADE00EFB579 /* SpiceTrackerTests */,
+				9E03CCF72BACDADE00EFB579 /* SpiceTrackerUITests */,
+				9E03CCDB2BACDAD400EFB579 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E03CCDB2BACDAD400EFB579 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E03CCDA2BACDAD400EFB579 /* SpiceTracker.app */,
+				9E03CCEA2BACDADE00EFB579 /* SpiceTrackerTests.xctest */,
+				9E03CCF42BACDADE00EFB579 /* SpiceTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E03CCDC2BACDAD400EFB579 /* SpiceTracker */ = {
+			isa = PBXGroup;
+			children = (
+				9E6FBBAA2BB497E30094B078 /* GoogleService-Info.plist */,
+				9E03CCDD2BACDAD400EFB579 /* SpiceTrackerApp.swift */,
+				9E03CD072BACDB5A00EFB579 /* IngredientView.swift */,
+				9E03CCE12BACDADD00EFB579 /* Assets.xcassets */,
+				9E03CCE32BACDADD00EFB579 /* Preview Content */,
+			);
+			path = SpiceTracker;
+			sourceTree = "<group>";
+		};
+		9E03CCE32BACDADD00EFB579 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9E03CCE42BACDADD00EFB579 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9E03CCED2BACDADE00EFB579 /* SpiceTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E03CCEE2BACDADE00EFB579 /* SpiceTrackerTests.swift */,
+			);
+			path = SpiceTrackerTests;
+			sourceTree = "<group>";
+		};
+		9E03CCF72BACDADE00EFB579 /* SpiceTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9E03CCF82BACDADE00EFB579 /* SpiceTrackerUITests.swift */,
+				9E03CCFA2BACDADE00EFB579 /* SpiceTrackerUITestsLaunchTests.swift */,
+			);
+			path = SpiceTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E03CCD92BACDAD400EFB579 /* SpiceTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E03CCFE2BACDADE00EFB579 /* Build configuration list for PBXNativeTarget "SpiceTracker" */;
+			buildPhases = (
+				9E03CCD62BACDAD400EFB579 /* Sources */,
+				9E03CCD72BACDAD400EFB579 /* Frameworks */,
+				9E03CCD82BACDAD400EFB579 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpiceTracker;
+			packageProductDependencies = (
+				9E5C6DD22BB28D3800DDFE63 /* FirebaseAnalytics */,
+			);
+			productName = SpiceTracker;
+			productReference = 9E03CCDA2BACDAD400EFB579 /* SpiceTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E03CCE92BACDADE00EFB579 /* SpiceTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E03CD012BACDADE00EFB579 /* Build configuration list for PBXNativeTarget "SpiceTrackerTests" */;
+			buildPhases = (
+				9E03CCE62BACDADE00EFB579 /* Sources */,
+				9E03CCE72BACDADE00EFB579 /* Frameworks */,
+				9E03CCE82BACDADE00EFB579 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E03CCEC2BACDADE00EFB579 /* PBXTargetDependency */,
+			);
+			name = SpiceTrackerTests;
+			productName = SpiceTrackerTests;
+			productReference = 9E03CCEA2BACDADE00EFB579 /* SpiceTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9E03CCF32BACDADE00EFB579 /* SpiceTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E03CD042BACDADE00EFB579 /* Build configuration list for PBXNativeTarget "SpiceTrackerUITests" */;
+			buildPhases = (
+				9E03CCF02BACDADE00EFB579 /* Sources */,
+				9E03CCF12BACDADE00EFB579 /* Frameworks */,
+				9E03CCF22BACDADE00EFB579 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E03CCF62BACDADE00EFB579 /* PBXTargetDependency */,
+			);
+			name = SpiceTrackerUITests;
+			productName = SpiceTrackerUITests;
+			productReference = 9E03CCF42BACDADE00EFB579 /* SpiceTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E03CCD22BACDAD400EFB579 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					9E03CCD92BACDAD400EFB579 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					9E03CCE92BACDADE00EFB579 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 9E03CCD92BACDAD400EFB579;
+					};
+					9E03CCF32BACDADE00EFB579 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 9E03CCD92BACDAD400EFB579;
+					};
+				};
+			};
+			buildConfigurationList = 9E03CCD52BACDAD400EFB579 /* Build configuration list for PBXProject "SpiceTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E03CCD12BACDAD400EFB579;
+			packageReferences = (
+				9E5C6DD12BB28D3800DDFE63 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 9E03CCDB2BACDAD400EFB579 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E03CCD92BACDAD400EFB579 /* SpiceTracker */,
+				9E03CCE92BACDADE00EFB579 /* SpiceTrackerTests */,
+				9E03CCF32BACDADE00EFB579 /* SpiceTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E03CCD82BACDAD400EFB579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E03CCE52BACDADD00EFB579 /* Preview Assets.xcassets in Resources */,
+				9E03CCE22BACDADD00EFB579 /* Assets.xcassets in Resources */,
+				9E6FBBAB2BB497E30094B078 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E03CCE82BACDADE00EFB579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E6FBBAC2BB497E30094B078 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E03CCF22BACDADE00EFB579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E6FBBAD2BB497E30094B078 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E03CCD62BACDAD400EFB579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E03CD082BACDB5B00EFB579 /* IngredientView.swift in Sources */,
+				9E03CCDE2BACDAD400EFB579 /* SpiceTrackerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E03CCE62BACDADE00EFB579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E03CCEF2BACDADE00EFB579 /* SpiceTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E03CCF02BACDADE00EFB579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E03CCFB2BACDADE00EFB579 /* SpiceTrackerUITestsLaunchTests.swift in Sources */,
+				9E03CCF92BACDADE00EFB579 /* SpiceTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E03CCEC2BACDADE00EFB579 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E03CCD92BACDAD400EFB579 /* SpiceTracker */;
+			targetProxy = 9E03CCEB2BACDADE00EFB579 /* PBXContainerItemProxy */;
+		};
+		9E03CCF62BACDADE00EFB579 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E03CCD92BACDAD400EFB579 /* SpiceTracker */;
+			targetProxy = 9E03CCF52BACDADE00EFB579 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9E03CCFC2BACDADE00EFB579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E03CCFD2BACDADE00EFB579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E03CCFF2BACDADE00EFB579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpiceTracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = illinois.SpiceTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E03CD002BACDADE00EFB579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpiceTracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = illinois.SpiceTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9E03CD022BACDADE00EFB579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = illinois.SpiceTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpiceTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpiceTracker";
+			};
+			name = Debug;
+		};
+		9E03CD032BACDADE00EFB579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = illinois.SpiceTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpiceTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpiceTracker";
+			};
+			name = Release;
+		};
+		9E03CD052BACDADE00EFB579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = illinois.SpiceTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpiceTracker;
+			};
+			name = Debug;
+		};
+		9E03CD062BACDADE00EFB579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = illinois.SpiceTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpiceTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E03CCD52BACDAD400EFB579 /* Build configuration list for PBXProject "SpiceTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E03CCFC2BACDADE00EFB579 /* Debug */,
+				9E03CCFD2BACDADE00EFB579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E03CCFE2BACDADE00EFB579 /* Build configuration list for PBXNativeTarget "SpiceTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E03CCFF2BACDADE00EFB579 /* Debug */,
+				9E03CD002BACDADE00EFB579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E03CD012BACDADE00EFB579 /* Build configuration list for PBXNativeTarget "SpiceTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E03CD022BACDADE00EFB579 /* Debug */,
+				9E03CD032BACDADE00EFB579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E03CD042BACDADE00EFB579 /* Build configuration list for PBXNativeTarget "SpiceTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E03CD052BACDADE00EFB579 /* Debug */,
+				9E03CD062BACDADE00EFB579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E5C6DD12BB28D3800DDFE63 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E5C6DD22BB28D3800DDFE63 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E5C6DD12BB28D3800DDFE63 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9E03CCD22BACDAD400EFB579 /* Project object */;
+}
