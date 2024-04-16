@@ -10,34 +10,8 @@ import CoreLocation
 import SwiftUI
 import MapKit
 
-struct LocationView: View {
-    @StateObject private var locationDataManager = LocationDataManager.shared
-        @State private var region = MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194), // Default center (San Francisco)
-            span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5) // Default zoom level
-        )
-
-        var body: some View {
-            Map(coordinateRegion: $region, showsUserLocation: true)
-                // Map annotations can be added here if needed
-            
-            .onAppear {
-                locationDataManager.startUpdatingLocationAndHeading()
-            }
-            .onChange(of: locationDataManager.currentLocation) { newLocation in
-                guard let newLocation = newLocation else { return }
-                region.center = newLocation.coordinate
-            }
-            .edgesIgnoringSafeArea(.all)
-        }
-    }
-
-
-struct LocationView_Previews: PreviewProvider {
-    static var previews: some View {
-        LocationView()
-    }
-}
+//var currentLocation: CLLocation? // Declare currentLocation as a published property
+//init(latitude: CLLocationDegrees, longitude: CLLocationDegrees)
 
 // Creates a location data manager.
 //central access point to all location services; start and stop the services you use
@@ -84,14 +58,30 @@ class LocationDataManager: NSObject, ObservableObject, CLLocationManagerDelegate
         locationManager.distanceFilter = kCLDistanceFilterNone
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
     }
     
     // Location-related properties and methods.
     func startUpdatingLocationAndHeading() {
         locationManager.startUpdatingLocation()
         locationManager.startUpdatingHeading()
-
         }
+    
+    //Monitoring a region around the specified coordinate
+    func monitorRegionAtLocation(center: CLLocationCoordinate2D, identifier: String ) {
+        // Make sure the devices supports region monitoring.
+        if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
+            // Register the region.
+            let maxDistance = locationManager.maximumRegionMonitoringDistance
+            let region = CLCircularRegion(center: center,
+                 radius: maxDistance, identifier: identifier)
+            region.notifyOnEntry = true
+            region.notifyOnExit = false
+       
+            locationManager.startMonitoring(for: region)
+            
+        }
+    }
     
     // MARK: - CLLocationManagerDelegate
     

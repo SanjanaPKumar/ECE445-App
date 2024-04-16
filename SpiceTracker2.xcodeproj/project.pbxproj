@@ -24,6 +24,9 @@
 		9E32D5492BBB3D580074138E /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32D5482BBB3D580074138E /* LocationView.swift */; };
 		9E32D54A2BBB3D580074138E /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32D5482BBB3D580074138E /* LocationView.swift */; };
 		9E32D54B2BBB3D580074138E /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32D5482BBB3D580074138E /* LocationView.swift */; };
+		9E6AAF9F2BCC66740095E47C /* PushNotification.apns in Resources */ = {isa = PBXBuildFile; fileRef = 9E6AAF9E2BCC66740095E47C /* PushNotification.apns */; };
+		9E6AAFA02BCC66740095E47C /* PushNotification.apns in Resources */ = {isa = PBXBuildFile; fileRef = 9E6AAF9E2BCC66740095E47C /* PushNotification.apns */; };
+		9E6AAFA12BCC66740095E47C /* PushNotification.apns in Resources */ = {isa = PBXBuildFile; fileRef = 9E6AAF9E2BCC66740095E47C /* PushNotification.apns */; };
 		F53BC8752BB116D70054B9AC /* SpiceTracker2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53BC8742BB116D70054B9AC /* SpiceTracker2App.swift */; };
 		F53BC8772BB116D70054B9AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53BC8762BB116D70054B9AC /* ContentView.swift */; };
 		F53BC8792BB116DB0054B9AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53BC8782BB116DB0054B9AC /* Assets.xcassets */; };
@@ -54,6 +57,8 @@
 		9E32D5372BBA03D20074138E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9E32D5442BBB0C080074138E /* GoogleMapsPrivacy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMapsPrivacy.bundle; sourceTree = "<group>"; };
 		9E32D5482BBB3D580074138E /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		9E32D54C2BBC5E870074138E /* SpiceTracker2.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SpiceTracker2.xctestplan; sourceTree = "<group>"; };
+		9E6AAF9E2BCC66740095E47C /* PushNotification.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PushNotification.apns; sourceTree = "<group>"; };
 		F53BC8712BB116D70054B9AC /* SpiceTracker2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpiceTracker2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53BC8742BB116D70054B9AC /* SpiceTracker2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceTracker2App.swift; sourceTree = "<group>"; };
 		F53BC8762BB116D70054B9AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +107,7 @@
 		F53BC8682BB116D70054B9AC = {
 			isa = PBXGroup;
 			children = (
+				9E32D54C2BBC5E870074138E /* SpiceTracker2.xctestplan */,
 				F53BC8732BB116D70054B9AC /* SpiceTracker2 */,
 				F53BC8842BB116DC0054B9AC /* SpiceTracker2Tests */,
 				F53BC88E2BB116DC0054B9AC /* SpiceTracker2UITests */,
@@ -129,6 +135,7 @@
 				F53BC8782BB116DB0054B9AC /* Assets.xcassets */,
 				F53BC87A2BB116DB0054B9AC /* Preview Content */,
 				9E32D5482BBB3D580074138E /* LocationView.swift */,
+				9E6AAF9E2BCC66740095E47C /* PushNotification.apns */,
 			);
 			path = SpiceTracker2;
 			sourceTree = "<group>";
@@ -280,6 +287,7 @@
 				F53BC87C2BB116DB0054B9AC /* Preview Assets.xcassets in Resources */,
 				F53BC8792BB116DB0054B9AC /* Assets.xcassets in Resources */,
 				9E32D5382BBA03D20074138E /* GoogleService-Info.plist in Resources */,
+				9E6AAF9F2BCC66740095E47C /* PushNotification.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E32D5462BBB0C080074138E /* GoogleMapsPrivacy.bundle in Resources */,
+				9E6AAFA02BCC66740095E47C /* PushNotification.apns in Resources */,
 				9E32D5392BBA03D20074138E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E32D5472BBB0C080074138E /* GoogleMapsPrivacy.bundle in Resources */,
+				9E6AAFA12BCC66740095E47C /* PushNotification.apns in Resources */,
 				9E32D53A2BBA03D20074138E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

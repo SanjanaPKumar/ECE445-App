@@ -7,6 +7,8 @@
 
 import XCTest
 @testable import SpiceTracker2
+import CoreLocation
+
 
 final class SpiceTracker2Tests: XCTestCase {
 
@@ -24,6 +26,10 @@ final class SpiceTracker2Tests: XCTestCase {
         // Any test you write for XCTest can be annotated as throws and async.
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        
+        //coordinates for green street target
+        XCUIDevice.shared.location = XCUILocation(location: CLLocation(latitude: 40.11035399200798, longitude: -88.23011653279755))
+        // Launch your app and run the test.
     }
 
     func testPerformanceExample() throws {

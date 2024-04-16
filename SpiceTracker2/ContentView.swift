@@ -6,6 +6,38 @@
 //
 
 import SwiftUI
+import GoogleMaps
+import CoreLocation
+import MapKit
+
+struct LocationView: View {
+    @StateObject private var locationDataManager = LocationDataManager.shared
+        @State private var region = MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: 40.11035399200798, longitude: -88.23011653279755), //target on green location
+                //latitude: 37.7749, longitude: -122.4194
+                    span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
+        )
+
+        var body: some View {
+            Map(coordinateRegion: $region, showsUserLocation: true)
+                // Map annotations can be added here if needed
+            
+            .onAppear {
+                locationDataManager.startUpdatingLocationAndHeading()
+            }
+            .onChange(of: locationDataManager.currentLocation) { newLocation in
+                guard let newLocation = newLocation else { return }
+                region.center = newLocation.coordinate
+            }
+            .edgesIgnoringSafeArea(.all)
+        }
+    }
+
+struct LocationView_Previews: PreviewProvider {
+    static var previews: some View {
+        LocationView()
+    }
+}
 
 //LANDING PAGE
 //Content View is main access point to app
@@ -14,9 +46,31 @@ struct ContentView: View {
 //Variable for navigation bar
 @State private var showGroceryPage = false
 @State private var showIngredientDashboard = false
+@State private var showLocationView = false
+
+//static var currentPage: Page = .home
+//    
+//enum Page {
+//    case home
+//    case groceryPage
+//    case ingredientDashboard
+//    case locationView
+//}
+
 var body: some View {
     NavigationView {
         VStack {
+//            switch ContentView.currentPage{
+//            case .home:
+//                ContentView()
+//            case .groceryPage:
+//                GroceryPage()
+//            case .ingredientDashboard:
+//                IngredientDashboard()
+//            case .locationView:
+//                LocationView()
+//            }
+            
             Text("Dry Kitchen Ingredient Tracker")
                 .font(.largeTitle)
                 .fontWeight(.bold)
@@ -50,6 +104,20 @@ var body: some View {
                     // Trigger navigation on button tap
                     .background(
                         NavigationLink(destination: IngredientDashboard(), isActive: $showIngredientDashboard) {
+                        }
+                    )
+                })
+            //Navigation to Location View
+                .navigationBarItems(leading: Button(action:  {showLocationView = true}) {
+                    HStack {
+                        Text("Location View")
+                            .font(.callout)
+                    }
+                    .foregroundColor(.blue)
+                    .font(.caption)
+                    // Trigger navigation on button tap
+                    .background(
+                        NavigationLink(destination: LocationView(), isActive: $showLocationView) {
                         }
                     )
                 })

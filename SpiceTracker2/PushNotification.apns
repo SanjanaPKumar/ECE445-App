@@ -1,0 +1,9 @@
+{
+    "Simulator Target Bundle": "illinois.SpiceTracker2",
+    "aps" : {
+       "alert" : {
+            "title" : "You are near a grocery store",
+            "body" : "You have items in your grocery list!"
+        },
+   },
+}
