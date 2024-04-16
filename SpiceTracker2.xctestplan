@@ -1,0 +1,41 @@
+{
+  "configurations" : [
+    {
+      "id" : "085E0392-617D-4A81-A659-144015CE4D8F",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "locationScenario" : {
+      "identifier" : "New York, NY, USA",
+      "referenceType" : "built-in"
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:SpiceTracker2.xcodeproj",
+      "identifier" : "F53BC8702BB116D70054B9AC",
+      "name" : "SpiceTracker2"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SpiceTracker2.xcodeproj",
+        "identifier" : "F53BC8802BB116DC0054B9AC",
+        "name" : "SpiceTracker2Tests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SpiceTracker2.xcodeproj",
+        "identifier" : "F53BC88A2BB116DC0054B9AC",
+        "name" : "SpiceTracker2UITests"
+      }
+    }
+  ],
+  "version" : 1
+}
