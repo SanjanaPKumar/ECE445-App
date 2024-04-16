@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import FirebaseDatabase
+import Firebase
 
 //LANDING PAGE
 //Content View is main access point to app
@@ -23,6 +25,12 @@ var body: some View {
                 .foregroundColor(Color.blue)
                 .multilineTextAlignment(.center)
                 .padding(.top, -85.0)
+            
+            Text("Ingredient Dashboard: Enter spice name and lower weight threshold value [0-500 grams] for each container")
+                .padding(.all, 15.0)
+            
+            Text("Grocery List: List of spices running low")
+                .padding(.leading, -16)
             
             // Navigation to Grocery Page
                 .navigationBarItems(leading: Button(action:  {showGroceryPage = true}) {
@@ -65,38 +73,24 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-//GROCERY LIST
-struct GroceryPage: View {
-    var body: some View {
-        Text("Grocery List")
-            .font(.largeTitle)
-            .fontWeight(.heavy)
-            .foregroundColor(Color.blue)
-            .multilineTextAlignment(.center)
-            .padding()
-        
-    }}
-
-//Coding purposes,shows a preview of the Grocery List page
-struct GroceryPage_Previews: PreviewProvider {
-    static var previews: some View {
-        GroceryPage()
-    }
-}
-
 //INGREDIENT DASHBOARD
 class Spice: Identifiable, ObservableObject {
 //    let id = UUID(); not sure if needed later
     @Published var name: String
     @Published var trackedWeight: Double
     @Published var lowerThreshold: Double
+    @Published var runningLow: Bool
+    @Published var RFID_Number: String
+    @Published var Box_Number: String
 
     //initilazation of Spice class
-    init(name: String, trackedWeight: Double, lowerThreshold: Double) {
+    init(name: String, trackedWeight: Double, lowerThreshold: Double,runningLow: Bool, RFID_Number: String,Box_Number: String) {
         self.name = name
         self.trackedWeight = trackedWeight
         self.lowerThreshold = lowerThreshold
+        self.runningLow = runningLow
+        self.RFID_Number = RFID_Number
+        self.Box_Number = Box_Number
     }
 }
 
@@ -104,26 +98,29 @@ struct IngredientView: View {
     @ObservedObject var spice: Spice
     var viewModel: IngredientViewModel
     @State private var errorLowerThresholdMessage: String?
-
+    
     var body: some View {
         VStack(alignment: .leading) {
-            TextField("Ingredient Name", text: $spice.name)
-                .font(.headline)
-                .onChange(of: spice.name) { newValue, _ in
-                    viewModel.updateName(for: spice, newValue: newValue)
-                }
-            
+            HStack {
+                Text("Container \(spice.Box_Number):")
+                TextField("Spice Name", text: $spice.name)
+                    .font(.headline)
+                    .onChange(of: spice.name) { _ in
+                        updateSpiceInFirebase()
+                    }
+            }
             HStack {
                 Text("Lower Threshold:")
                 TextField("Lower Threshold", value: $spice.lowerThreshold, formatter: NumberFormatter())
                     .onChange(of: spice.lowerThreshold) { newValue, _ in
                         validateLowerThreshold()
-                        viewModel.updateLowerThreshold(for: spice, newValue: newValue)
+                        updateSpiceInFirebase()
+                        
                     }
             }
-
-//Since errorLowerThresholdMessage is optional string type
-//Need to let become a string, so we can test if it !=nil
+            
+            //Since errorLowerThresholdMessage is optional string type
+            //Need to let become a string, so we can test if it !=nil
             if let errorMessage = errorLowerThresholdMessage
             {
                 Text(errorMessage)
@@ -132,21 +129,43 @@ struct IngredientView: View {
             }
             
             ProgressBar(trackedWeight: spice.trackedWeight, lowerThreshold: spice.lowerThreshold, isError: errorLowerThresholdMessage != nil)
-
+            
         }
         .padding(.vertical, 25.0)
     }
-
+    
     private func validateLowerThreshold() {
         if(spice.lowerThreshold < 0 ||
-             spice.lowerThreshold > 500 || spice.lowerThreshold.truncatingRemainder(dividingBy: 1) != 0)
-              {
+           spice.lowerThreshold > 500 || spice.lowerThreshold.truncatingRemainder(dividingBy: 1) != 0)
+        {
             errorLowerThresholdMessage = "Threshold must be a whole number between 0 and 500 grams."
         } else {
             errorLowerThresholdMessage = nil
         }
     }
+    
+    
+    private func updateSpiceInFirebase() {
+        guard let index = viewModel.ingredients.firstIndex(where: { $0.id == spice.id }) else {
+            return
+        }
+        
+        let updatedSpice = viewModel.ingredients[index]
+        //For setting runningLow flag value correctly
+        if (updatedSpice.lowerThreshold > updatedSpice.trackedWeight){
+            updatedSpice.runningLow = true
+        }else{
+            updatedSpice.runningLow = false
+        }
+        
+        let childReference = viewModel.ref.child("spices").child("\(index)")
+        
+        childReference.child("spiceName").setValue(updatedSpice.name)
+        childReference.child("lowerThreshold").setValue(updatedSpice.lowerThreshold)
+        childReference.child("runningLow").setValue(updatedSpice.runningLow)
+    }
 }
+
 
 struct ProgressBar: View {
     var trackedWeight: Double
@@ -249,24 +268,46 @@ struct Triangle: Shape {
 }
 
 class IngredientViewModel: ObservableObject {
-    @Published var ingredients: [Spice] = [
-        Spice(name: "Ingredient 1", trackedWeight: 250, lowerThreshold: 100),
-        Spice(name: "Ingredient 2", trackedWeight: 400, lowerThreshold: 150),
-        Spice(name: "Ingredient 3", trackedWeight: 20, lowerThreshold: 50)
-    ]
-    
-    // Update lowerThreshold for a specific ingredient
-        func updateLowerThreshold(for ingredient: Spice, newValue: Double) {
-            if let index = ingredients.firstIndex(where: { $0.id == ingredient.id }) {
-                ingredients[index].lowerThreshold = newValue
-            }
+    @Published var ingredients: [Spice] = []
+     var ref: DatabaseReference = Database.database().reference()
+            
+        init() {
+            fetchSpicesFromFirebase()
         }
-    // Update name for a specific ingredient
-        func updateName(for ingredient: Spice, newValue: String) {
-            if let index = ingredients.firstIndex(where: { $0.id == ingredient.id }) {
-                ingredients[index].name = newValue
-            }
-        }
+        
+    private func fetchSpicesFromFirebase() {
+           let ref = Database.database().reference()
+           ref.child("spices").observeSingleEvent(of: .value) { (snapshot, error) in
+               if let error = error {
+                   print("Error fetching spices:", error)
+                   return
+               }
+
+               guard let spicesData = snapshot.value as? [[String: Any]] else {
+                   print("Error: Unable to fetch data in spices")
+                   return
+               }
+               var spices: [Spice] = []
+               for spiceData in spicesData {
+                   guard let name = spiceData["spiceName"] as? String,
+                         let trackedWeight = spiceData["trackedWeight"] as? Double,
+                         let lowerThreshold = spiceData["lowerThreshold"] as? Double,
+                         let runningLow = spiceData["runningLow"] as? Bool,
+                         let RFID_Number = spiceData["RFID_Number"] as? String,
+                         let Box_Number = spiceData["Box_Number"] as? String else {
+                       print("Error: Unable to parse spice data")
+                       continue
+                   }
+                   let spice = Spice(name: name, trackedWeight: trackedWeight, lowerThreshold: lowerThreshold, runningLow: runningLow, RFID_Number: RFID_Number, Box_Number: Box_Number)
+                   spices.append(spice)
+               }
+               
+               DispatchQueue.main.async {
+                   self.ingredients = spices
+//                   print("Ingredients array:", self.ingredients)
+               }
+           }
+       }
 }
 
 struct IngredientDashboard: View {
@@ -284,7 +325,6 @@ struct IngredientDashboard: View {
                 ForEach(viewModel.ingredients) { ingredient in
                     IngredientView(spice: ingredient, viewModel: viewModel)
                 }
-                
             }
             .padding()
             
@@ -296,5 +336,32 @@ struct IngredientDashboard: View {
 struct IngredientDashboard_Previews: PreviewProvider {
     static var previews: some View {
         IngredientDashboard()
+    }
+}
+
+//GROCERY LIST
+struct GroceryPage: View {
+    @StateObject var viewModel = IngredientViewModel()
+    var body: some View {
+        Text("Grocery List")
+            .font(.largeTitle)
+            .fontWeight(.heavy)
+            .foregroundColor(Color.blue)
+            .multilineTextAlignment(.center)
+            .padding()
+        
+        // Display only spices where runningLow is true
+        List(viewModel.ingredients.filter { $0.runningLow }) { spice in
+            Text(spice.name)
+                .padding()
+            
+        }
+    }
+}
+
+//Coding purposes,shows a preview of the Grocery List page
+struct GroceryPage_Previews: PreviewProvider {
+    static var previews: some View {
+        GroceryPage()
     }
 }

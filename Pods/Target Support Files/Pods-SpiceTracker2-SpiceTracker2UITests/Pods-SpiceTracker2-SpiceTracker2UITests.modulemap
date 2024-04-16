@@ -1,0 +1,6 @@
+framework module Pods_SpiceTracker2_SpiceTracker2UITests {
+  umbrella header "Pods-SpiceTracker2-SpiceTracker2UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E32D52E2BBA03B00074138E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9E32D52D2BBA03B00074138E /* FirebaseAnalytics */; };
-		9E32D5302BBA03B00074138E /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 9E32D52F2BBA03B00074138E /* FirebaseAnalyticsOnDeviceConversion */; };
-		9E32D5322BBA03B00074138E /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9E32D5312BBA03B00074138E /* FirebaseAnalyticsSwift */; };
-		9E32D5342BBA03B00074138E /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 9E32D5332BBA03B00074138E /* FirebaseAnalyticsWithoutAdIdSupport */; };
-		9E32D5362BBA03B00074138E /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 9E32D5352BBA03B00074138E /* FirebaseAppCheck */; };
+		35CD43DDCA5D188D85656E16 /* Pods_SpiceTracker2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549656A6DE2F3F92A0712CE8 /* Pods_SpiceTracker2.framework */; };
+		3FB8920CF6E795461B530FFC /* Pods_SpiceTracker2_SpiceTracker2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0607383A3F033AFCC267FFB5 /* Pods_SpiceTracker2_SpiceTracker2UITests.framework */; };
+		914EC58C56F0FDB72538F729 /* Pods_SpiceTracker2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998428A7FA152672680298CE /* Pods_SpiceTracker2Tests.framework */; };
 		9E32D5382BBA03D20074138E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E32D5372BBA03D20074138E /* GoogleService-Info.plist */; };
 		9E32D5392BBA03D20074138E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E32D5372BBA03D20074138E /* GoogleService-Info.plist */; };
 		9E32D53A2BBA03D20074138E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E32D5372BBA03D20074138E /* GoogleService-Info.plist */; };
@@ -42,7 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0607383A3F033AFCC267FFB5 /* Pods_SpiceTracker2_SpiceTracker2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpiceTracker2_SpiceTracker2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3F2AC0079D21A6550B7716 /* Pods-SpiceTracker2-SpiceTracker2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpiceTracker2-SpiceTracker2UITests.debug.xcconfig"; path = "Target Support Files/Pods-SpiceTracker2-SpiceTracker2UITests/Pods-SpiceTracker2-SpiceTracker2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		460E185371875DF35BCF405C /* Pods-SpiceTracker2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpiceTracker2Tests.debug.xcconfig"; path = "Target Support Files/Pods-SpiceTracker2Tests/Pods-SpiceTracker2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		549656A6DE2F3F92A0712CE8 /* Pods_SpiceTracker2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpiceTracker2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5911BB59FFBE9203091AFDD4 /* Pods-SpiceTracker2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpiceTracker2.debug.xcconfig"; path = "Target Support Files/Pods-SpiceTracker2/Pods-SpiceTracker2.debug.xcconfig"; sourceTree = "<group>"; };
+		998428A7FA152672680298CE /* Pods_SpiceTracker2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpiceTracker2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E32D5372BBA03D20074138E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C0F279CD06D89DF6562F8C57 /* Pods-SpiceTracker2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpiceTracker2.release.xcconfig"; path = "Target Support Files/Pods-SpiceTracker2/Pods-SpiceTracker2.release.xcconfig"; sourceTree = "<group>"; };
+		E5E1DCD694C52472699F8917 /* Pods-SpiceTracker2-SpiceTracker2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpiceTracker2-SpiceTracker2UITests.release.xcconfig"; path = "Target Support Files/Pods-SpiceTracker2-SpiceTracker2UITests/Pods-SpiceTracker2-SpiceTracker2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		E94179B1D2FEB887146276F3 /* Pods-SpiceTracker2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpiceTracker2Tests.release.xcconfig"; path = "Target Support Files/Pods-SpiceTracker2Tests/Pods-SpiceTracker2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F53BC8712BB116D70054B9AC /* SpiceTracker2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpiceTracker2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53BC8742BB116D70054B9AC /* SpiceTracker2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceTracker2App.swift; sourceTree = "<group>"; };
 		F53BC8762BB116D70054B9AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,11 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E32D5322BBA03B00074138E /* FirebaseAnalyticsSwift in Frameworks */,
-				9E32D52E2BBA03B00074138E /* FirebaseAnalytics in Frameworks */,
-				9E32D5302BBA03B00074138E /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
-				9E32D5362BBA03B00074138E /* FirebaseAppCheck in Frameworks */,
-				9E32D5342BBA03B00074138E /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				35CD43DDCA5D188D85656E16 /* Pods_SpiceTracker2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914EC58C56F0FDB72538F729 /* Pods_SpiceTracker2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +83,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB8920CF6E795461B530FFC /* Pods_SpiceTracker2_SpiceTracker2UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39DB3660326AACD443815B2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				549656A6DE2F3F92A0712CE8 /* Pods_SpiceTracker2.framework */,
+				0607383A3F033AFCC267FFB5 /* Pods_SpiceTracker2_SpiceTracker2UITests.framework */,
+				998428A7FA152672680298CE /* Pods_SpiceTracker2Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD335F0DF10237C143100503 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5911BB59FFBE9203091AFDD4 /* Pods-SpiceTracker2.debug.xcconfig */,
+				C0F279CD06D89DF6562F8C57 /* Pods-SpiceTracker2.release.xcconfig */,
+				0B3F2AC0079D21A6550B7716 /* Pods-SpiceTracker2-SpiceTracker2UITests.debug.xcconfig */,
+				E5E1DCD694C52472699F8917 /* Pods-SpiceTracker2-SpiceTracker2UITests.release.xcconfig */,
+				460E185371875DF35BCF405C /* Pods-SpiceTracker2Tests.debug.xcconfig */,
+				E94179B1D2FEB887146276F3 /* Pods-SpiceTracker2Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F53BC8682BB116D70054B9AC = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +120,8 @@
 				F53BC8842BB116DC0054B9AC /* SpiceTracker2Tests */,
 				F53BC88E2BB116DC0054B9AC /* SpiceTracker2UITests */,
 				F53BC8722BB116D70054B9AC /* Products */,
+				DD335F0DF10237C143100503 /* Pods */,
+				39DB3660326AACD443815B2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F53BC8952BB116DC0054B9AC /* Build configuration list for PBXNativeTarget "SpiceTracker2" */;
 			buildPhases = (
+				1D9AF5E6770E537F02A2472D /* [CP] Check Pods Manifest.lock */,
 				F53BC86D2BB116D70054B9AC /* Sources */,
 				F53BC86E2BB116D70054B9AC /* Frameworks */,
 				F53BC86F2BB116D70054B9AC /* Resources */,
+				2458141E9515379D0B11CAE8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,11 +191,6 @@
 			);
 			name = SpiceTracker2;
 			packageProductDependencies = (
-				9E32D52D2BBA03B00074138E /* FirebaseAnalytics */,
-				9E32D52F2BBA03B00074138E /* FirebaseAnalyticsOnDeviceConversion */,
-				9E32D5312BBA03B00074138E /* FirebaseAnalyticsSwift */,
-				9E32D5332BBA03B00074138E /* FirebaseAnalyticsWithoutAdIdSupport */,
-				9E32D5352BBA03B00074138E /* FirebaseAppCheck */,
 			);
 			productName = SpiceTracker2;
 			productReference = F53BC8712BB116D70054B9AC /* SpiceTracker2.app */;
@@ -173,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F53BC8982BB116DC0054B9AC /* Build configuration list for PBXNativeTarget "SpiceTracker2Tests" */;
 			buildPhases = (
+				A428918B003C21A82DC25754 /* [CP] Check Pods Manifest.lock */,
 				F53BC87D2BB116DC0054B9AC /* Sources */,
 				F53BC87E2BB116DC0054B9AC /* Frameworks */,
 				F53BC87F2BB116DC0054B9AC /* Resources */,
@@ -191,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F53BC89B2BB116DC0054B9AC /* Build configuration list for PBXNativeTarget "SpiceTracker2UITests" */;
 			buildPhases = (
+				E5A8ED3B44FD9A13ED6E96D4 /* [CP] Check Pods Manifest.lock */,
 				F53BC8872BB116DC0054B9AC /* Sources */,
 				F53BC8882BB116DC0054B9AC /* Frameworks */,
 				F53BC8892BB116DC0054B9AC /* Resources */,
+				E02D0F6296EE78B00693E710 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,7 +268,6 @@
 			);
 			mainGroup = F53BC8682BB116D70054B9AC;
 			packageReferences = (
-				9E32D52C2BBA03B00074138E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = F53BC8722BB116D70054B9AC /* Products */;
 			projectDirPath = "";
@@ -279,6 +308,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D9AF5E6770E537F02A2472D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpiceTracker2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2458141E9515379D0B11CAE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpiceTracker2/Pods-SpiceTracker2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpiceTracker2/Pods-SpiceTracker2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpiceTracker2/Pods-SpiceTracker2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A428918B003C21A82DC25754 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpiceTracker2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E02D0F6296EE78B00693E710 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpiceTracker2-SpiceTracker2UITests/Pods-SpiceTracker2-SpiceTracker2UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpiceTracker2-SpiceTracker2UITests/Pods-SpiceTracker2-SpiceTracker2UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpiceTracker2-SpiceTracker2UITests/Pods-SpiceTracker2-SpiceTracker2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5A8ED3B44FD9A13ED6E96D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpiceTracker2-SpiceTracker2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F53BC86D2BB116D70054B9AC /* Sources */ = {
@@ -444,6 +576,7 @@
 		};
 		F53BC8962BB116DC0054B9AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5911BB59FFBE9203091AFDD4 /* Pods-SpiceTracker2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +584,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpiceTracker2/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -472,6 +606,7 @@
 		};
 		F53BC8972BB116DC0054B9AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F279CD06D89DF6562F8C57 /* Pods-SpiceTracker2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -479,6 +614,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpiceTracker2/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -500,11 +636,13 @@
 		};
 		F53BC8992BB116DC0054B9AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460E185371875DF35BCF405C /* Pods-SpiceTracker2Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
@@ -519,11 +657,13 @@
 		};
 		F53BC89A2BB116DC0054B9AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E94179B1D2FEB887146276F3 /* Pods-SpiceTracker2Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
@@ -538,10 +678,12 @@
 		};
 		F53BC89C2BB116DC0054B9AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B3F2AC0079D21A6550B7716 /* Pods-SpiceTracker2-SpiceTracker2UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = illinois.SpiceTracker2UITests;
@@ -555,10 +697,12 @@
 		};
 		F53BC89D2BB116DC0054B9AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E1DCD694C52472699F8917 /* Pods-SpiceTracker2-SpiceTracker2UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = illinois.SpiceTracker2UITests;
@@ -610,45 +754,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		9E32D52C2BBA03B00074138E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.23.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		9E32D52D2BBA03B00074138E /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9E32D52C2BBA03B00074138E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		9E32D52F2BBA03B00074138E /* FirebaseAnalyticsOnDeviceConversion */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9E32D52C2BBA03B00074138E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalyticsOnDeviceConversion;
-		};
-		9E32D5312BBA03B00074138E /* FirebaseAnalyticsSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9E32D52C2BBA03B00074138E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalyticsSwift;
-		};
-		9E32D5332BBA03B00074138E /* FirebaseAnalyticsWithoutAdIdSupport */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9E32D52C2BBA03B00074138E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalyticsWithoutAdIdSupport;
-		};
-		9E32D5352BBA03B00074138E /* FirebaseAppCheck */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9E32D52C2BBA03B00074138E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAppCheck;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F53BC8692BB116D70054B9AC /* Project object */;
 }
